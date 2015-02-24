@@ -7,12 +7,12 @@ Stable tag: 1.0.0
 License: GNU General Public License, version 3 (GPL-3.0)
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Admin Menu PHP Class helps developer easily create menus and submenus in WordPress Admin Panel (only for developers)
+Admin Menu PHP Class helps developer easily create menus and submenus in WordPress Admin Panel
 
 
 == Description ==
 
-This plugin is for Theme Developers to create menu on left navigation in wordpress admin panel (only for developers). It simplifies code for creating menus/submenus.
+This plugin is for Theme Developers to create menu on left navigation in wordpress admin panel. It simplifies code for creating menus/submenus.
 
 
 == Installation ==
