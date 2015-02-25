@@ -13,6 +13,7 @@ Admin Menu PHP Class helps developer easily create menus and submenus in WordPre
 == Description ==
 
 This plugin is for Theme Developers to create menu on left navigation in wordpress admin panel. It simplifies code for creating menus/submenus.
+Supports including files for each page if necessary.
 
 
 == Installation ==
@@ -30,6 +31,10 @@ This plugin is for Theme Developers to create menu on left navigation in wordpre
 = How to use this class? =
 
 The plugin file contains a sample code which explains how to use this class to create menus.
+
+= How to include file for the page? =
+
+Add a parameter called `'include' => 'file_path'` for any menu/submenu item you want to include file for.
 
 == Use ==
 
