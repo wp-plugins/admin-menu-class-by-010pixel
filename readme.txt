@@ -3,7 +3,7 @@ Contributors: 010Pixel
 Tags: admin menu, class, 010pixel, dev
 Requires at least: 3.1
 Tested up to: 4.1.1
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GNU General Public License, version 3 (GPL-3.0)
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
