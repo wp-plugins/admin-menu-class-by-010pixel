@@ -4,7 +4,7 @@ Plugin Name: Admin Menu Class by 010Pixel
 Plugin URI: http://www.010pixel.com/plugins/admin-menu-class-by-010pixel/
 Description: This plugin is to create menu on left navigation in WordPress Admin Panel
 Author: 010 Pixel
-Version: 1.0.0
+Version: 1.1.0
 Author URI: http://www.010pixel.com/
 
 --------------------------------------------------------------------------------
