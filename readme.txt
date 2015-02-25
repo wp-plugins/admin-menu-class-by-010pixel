@@ -43,7 +43,9 @@ Create arguments array (as shown in sample code in plugin file) and call the cla
 For any query, you can contact me at [010 Pixel](http://www.010pixel.com/)
 
 == Changelog ==
+
 = v1.0.0 =
 * Initial release.
+
 = v1.1.0 =
 * Added support for including files for each menu/submenu item
