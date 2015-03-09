@@ -4,7 +4,7 @@ Plugin Name: Admin Menu Class by 010Pixel
 Plugin URI: http://www.010pixel.com/plugins/admin-menu-class-by-010pixel/
 Description: This plugin is to create menu on left navigation in WordPress Admin Panel
 Author: 010 Pixel
-Version: 1.1.0
+Version: 1.1.1
 Author URI: http://www.010pixel.com/
 
 --------------------------------------------------------------------------------
@@ -210,7 +210,7 @@ Author URI: http://www.010pixel.com/
 				if ( empty($menu['args']['menu_title']) ) { $menu['args']['menu_title'] = $menu['args']['page_title']; }
 				if ( empty($menu['args']['function']) ) { $menu['args']['function'] = array( &$this, 'empty_function'); }
 
-				$menu_users = (array) !empty($menu['args']['users']) ? $menu['args']['users'] : (!empty($menu['users']) ? $menu['users'] : $menu_obj['users']) ;
+				$menu_users = (array) ( !empty($menu['args']['users']) ? $menu['args']['users'] : (!empty($menu['users']) ? $menu['users'] : $menu_obj['users']) );
 
 				foreach ( $menu_users as $menu_user ) {
 
@@ -241,7 +241,7 @@ Author URI: http://www.010pixel.com/
 					if ( empty($submenu['menu_title']) ) { $submenu['menu_title'] = $submenu['page_title']; }
 					if ( empty($submenu['function']) ) { $submenu['function'] = array( &$this, 'empty_function'); }
 
-					$submenu_users = (array) !empty($submenu['users']) ? $submenu['users'] : (!empty($menu['args']['users']) ? $menu['args']['users'] : $menu_obj['users']) ;
+					$submenu_users = (array) ( !empty($submenu['users']) ? $submenu['users'] : (!empty($menu['args']['users']) ? $menu['args']['users'] : $menu_obj['users']) );
 
 					foreach ( $submenu_users as $submenu_user ) {
 
