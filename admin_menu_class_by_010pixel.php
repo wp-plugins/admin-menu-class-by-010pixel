@@ -4,7 +4,7 @@ Plugin Name: Admin Menu Class by 010Pixel
 Plugin URI: http://www.010pixel.com/plugins/admin-menu-class-by-010pixel/
 Description: This plugin is to create menu on left navigation in WordPress Admin Panel
 Author: 010 Pixel
-Version: 1.1.1
+Version: 1.2.0
 Author URI: http://www.010pixel.com/
 
 --------------------------------------------------------------------------------
@@ -171,7 +171,13 @@ Author URI: http://www.010pixel.com/
 				)
 			);
 
+		private $user_roles;
+
 		public function __construct( $args = array() ) {
+
+			// Get logged-in user roles
+			$user = wp_get_current_user();
+			$this->user_roles = $user->roles;
 
 			if ( !is_admin() ) return;
 
@@ -214,6 +220,10 @@ Author URI: http://www.010pixel.com/
 
 				foreach ( $menu_users as $menu_user ) {
 
+					// check if the menu is for currently logged in user
+					// if not continue with next menu item
+					if ( ! in_array( $menu_user, $this->user_roles ) ) continue;
+
 					// Include required file
 					$this->include_file($menu['args']['include'], $menu_obj['prefix'] . $menu['args']['slug']);
 
@@ -244,6 +254,10 @@ Author URI: http://www.010pixel.com/
 					$submenu_users = (array) ( !empty($submenu['users']) ? $submenu['users'] : (!empty($menu['args']['users']) ? $menu['args']['users'] : $menu_obj['users']) );
 
 					foreach ( $submenu_users as $submenu_user ) {
+
+						// check if the submenu is for currently logged in user
+						// if not continue with next submenu item
+						if ( ! in_array( $submenu_user, $this->user_roles ) ) continue;
 
 						// Include required file
 						$this->include_file($submenu['include'], $menu_obj['prefix'] . $submenu['slug']);

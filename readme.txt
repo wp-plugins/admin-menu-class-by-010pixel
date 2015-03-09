@@ -3,7 +3,7 @@ Contributors: 010Pixel
 Tags: admin menu, class, 010pixel, dev
 Requires at least: 3.1
 Tested up to: 4.1.1
-Stable tag: 1.1.1
+Stable tag: 1.2.0
 License: GNU General Public License, version 3 (GPL-3.0)
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -52,3 +52,6 @@ For any query, you can contact me at [010 Pixel](http://www.010pixel.com/)
 
 = v1.1.1 =
 * Removed bug in converting users to array of users [line: 213, 244]
+
+= v1.2.0 =
+* Create only those menu/submenu item which are necessary for logged-in user roles
