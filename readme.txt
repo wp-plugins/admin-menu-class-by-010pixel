@@ -1,5 +1,5 @@
 === Admin Menu Class by 010Pixel ===
-Contributors: 010Pixel
+Contributors: 010pixel
 Donate link: https://pledgie.com/campaigns/28622
 Tags: admin menu, class, 010pixel, dev
 Requires at least: 3.1
