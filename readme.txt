@@ -20,8 +20,7 @@ Supports including files for each page if necessary.
 1. Unpack the download-package
 2. Upload folder include all files to the `/wp-content/plugins/` directory. The final directory tree should look like `/wp-content/plugins/010pixel-admin-menu-class/admin_menu_class_by_010pixel.php`
 3. Activate the plugin through the `Plugins` menu in WordPress
-4. Administrator can go to `Plugins` > `Template List Metabox` menu and configure the plugin (Type of Posts/Custom Posts where you want to show Template List Metabox)
-5. That's it, you can start using use this class in your theme to make menus in admin panel.
+4. That's it, you can start using use this class in your theme to make menus in admin panel.
 
 * or use the automatic install via backend of WordPress
 
